@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: gray;
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    
+}
+
+.clock{
+    max-height: 100vh;
+    width: min(80%, 1200px);
+    margin-inline: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 3rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    gap: 40px;
+    text-shadow: 0.25rem 0.25rem 0.6rem rgba(255, 255, 255, 0.1);
+}
+.hours{
+    gap: 1rem;
+   
+}
+.hours p{
+    font-size: clamp(1rem, 0.5vw + 0.8rem, 1.25rem);
+    color: aqua;
+}
+#hours{
+    color: orange;
+}
+.min{
+    gap: 1rem;
+}
+.min p{
+    font-size: clamp(1rem, 0.5vw + 0.8rem, 1.25rem);
+    color: aqua;
+}
+
+#minutes{
+    color: green;
+}
+.seconds{
+    min-width: 5.5rem;  
+}
+.seconds p{
+    font-size: clamp(1rem, 0.5vw + 0.8rem, 1.25rem);
+    color: aqua;
+}
+#seconds {
+    color: red;
+}
+
+.ap p{
+    font-size: clamp(1rem, 0.5vw + 0.8rem, 1.25rem);
+    color: yellow;
+}
+.ap span{
+    color: blue;
+}
